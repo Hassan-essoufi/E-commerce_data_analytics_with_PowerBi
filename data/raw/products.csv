@@ -1,0 +1,201 @@
+product_id,product_name,category,subcategory,brand,cost_price,selling_price,stock_quantity,min_stock,creation_date,is_active,weight_kg,supplier
+PROD_5000,Randonnée Chemise 763,Sport,Randonnée,Charrier,107.01,187.53,829,47,2024-11-26,True,10.99,Gautier
+PROD_5001,Électroménager Maintenant 735,Maison,Électroménager,Lebrun,338.83,601.34,432,37,2024-05-24,True,19.81,Salmon
+PROD_5002,Yoga Volonté 429,Sport,Yoga,Hubert Gauthier S.A.,25.74,41.86,944,15,2025-05-06,True,18.11,Teixeira Becker S.A.
+PROD_5003,Livre Absence 572,Loisirs,Livre,Thibault,463.08,584.48,435,44,2025-03-19,True,5.5,Bigot Fleury SA
+PROD_5004,Running Rouler 354,Sport,Running,Payet Delannoy SARL,189.49,300.77,444,15,2025-06-26,True,18.39,Chauveau
+PROD_5005,Tablette Action 468,Électronique,Tablette,Evrard,123.25,154.26,998,37,2023-11-25,True,19.47,Briand Denis SARL
+PROD_5006,Électroménager Gens 917,Maison,Électroménager,Andre Cohen et Fils,87.71,139.02,85,39,2024-01-08,True,2.95,Pierre Prévost S.A.S.
+PROD_5007,Casque Audio Spectacle 669,Électronique,Casque Audio,Chevallier et Fils,385.32,567.3,867,25,2024-06-30,True,14.88,Renault
+PROD_5008,Accessoires Loup 293,Mode,Accessoires,Auger,78.62,125.98,191,6,2024-10-26,True,0.44,Petitjean S.A.S.
+PROD_5009,Cuisine Profiter 989,Maison,Cuisine,Leroux,127.47,160.61,159,49,2024-08-31,True,9.8,Perret
+PROD_5010,Smartphone Indiquer 506,Électronique,Smartphone,Humbert,194.04,291.42,308,36,2025-03-01,True,7.1,Normand S.A.R.L.
+PROD_5011,Accessoires Libre 586,Mode,Accessoires,Alves Dos Santos SA,98.34,171.2,744,41,2025-09-01,True,11.49,Guyon
+PROD_5012,Yoga Religion 357,Sport,Yoga,Moreno Pons et Fils,113.63,174.17,739,10,2025-10-27,True,11.44,Leclerc
+PROD_5013,Chaussures Politique 296,Mode,Chaussures,Couturier SA,47.4,75.52,724,28,2025-09-05,True,6.14,Delahaye
+PROD_5014,Instrument Sac 716,Loisirs,Instrument,Colin,496.78,715.48,546,30,2025-10-21,True,4.59,Laine S.A.S.
+PROD_5015,Jeux Vidéo Absolument 204,Loisirs,Jeux Vidéo,Hoarau,72.73,107.99,112,10,2024-05-05,True,1.48,Blot Coste et Fils
+PROD_5016,Tablette Suffire 542,Électronique,Tablette,Laine Charpentier S.A.R.L.,239.78,325.37,284,33,2025-03-19,True,2.28,Petitjean
+PROD_5017,Smartwatch Membre 955,Électronique,Smartwatch,Chevalier Lamy S.A.R.L.,288.83,352.78,707,35,2025-06-04,True,12.84,Chevalier
+PROD_5018,Meuble Énergie 955,Maison,Meuble,Besson,177.77,241.77,135,18,2025-03-06,False,7.31,Lambert
+PROD_5019,Bricolage Salle 841,Loisirs,Bricolage,Maillet Dufour SARL,207.78,288.83,13,15,2024-08-24,True,2.38,Blanc SA
+PROD_5020,Smartphone Accent 857,Électronique,Smartphone,Mallet,49.89,80.48,16,9,2024-08-30,True,1.29,Blin S.A.S.
+PROD_5021,Sacs Vendre 331,Mode,Sacs,Charrier,355.34,607.8,764,30,2025-04-18,True,9.85,Benard S.A.S.
+PROD_5022,Smartphone Asseoir 689,Électronique,Smartphone,Courtois SARL,304.23,412.09,117,49,2023-11-24,True,10.63,Delmas SA
+PROD_5023,Jeux Vidéo Été 776,Loisirs,Jeux Vidéo,Briand,71.6,106.34,402,17,2025-10-01,True,17.4,Perrin
+PROD_5024,Tablette Nez 927,Électronique,Tablette,Ribeiro,92.93,117.57,567,43,2024-01-24,True,19.03,Roy SARL
+PROD_5025,Chaussures Escalier 835,Mode,Chaussures,Lemaire,151.88,229.98,803,36,2024-12-16,True,3.6,Guichard Le Goff S.A.R.L.
+PROD_5026,Luminaire Certain 230,Maison,Luminaire,Lebrun,145.82,193.38,591,43,2024-10-02,True,15.4,Daniel Aubry S.A.
+PROD_5027,Tablette Distinguer 706,Électronique,Tablette,Vaillant,489.79,609.33,925,15,2023-11-24,True,5.05,Pinto
+PROD_5028,Tablette Pouvoir 187,Électronique,Tablette,Gallet,410.87,718.08,547,27,2024-04-11,True,12.77,Schmitt
+PROD_5029,Running Mensonge 241,Sport,Running,Vasseur,222.7,292.89,442,40,2024-03-30,True,15.93,Huet SA
+PROD_5030,Instrument Crier 124,Loisirs,Instrument,Dupuy,75.66,94.81,732,15,2023-11-18,True,17.17,Guyon François SA
+PROD_5031,Jeux Vidéo Quart 129,Loisirs,Jeux Vidéo,Baron S.A.S.,267.99,408.32,905,35,2025-01-09,True,5.36,Hebert
+PROD_5032,Randonnée Pourquoi 612,Sport,Randonnée,Guibert Lopes S.A.,323.13,466.45,520,11,2024-11-17,True,19.4,Torres
+PROD_5033,Randonnée Doute 747,Sport,Randonnée,Petit SARL,277.2,403.0,42,36,2025-10-29,True,7.84,Michel Gilles S.A.
+PROD_5034,Running Trou 299,Sport,Running,Leleu,481.26,860.23,69,20,2024-11-02,True,19.88,Peltier et Fils
+PROD_5035,Chaussures Près 693,Mode,Chaussures,Bazin,456.91,743.65,678,9,2024-05-11,True,5.29,Roux
+PROD_5036,Tablette Noir 586,Électronique,Tablette,Chauvet,143.05,174.51,933,27,2024-07-19,True,12.25,Vallet
+PROD_5037,Vêtement Femme Entendre 410,Mode,Vêtement Femme,Vallée Boulanger S.A.S.,393.66,515.09,904,30,2024-11-14,True,13.41,Baron SA
+PROD_5038,Yoga Quelque 948,Sport,Yoga,Hardy S.A.R.L.,420.74,741.3,792,48,2024-03-31,True,1.57,Gillet
+PROD_5039,Luminaire Tache 971,Maison,Luminaire,Lelièvre,399.63,577.71,531,39,2024-03-03,False,18.34,Sanchez et Fils
+PROD_5040,Vêtement Homme Matin 283,Mode,Vêtement Homme,Alexandre,392.6,617.8,49,35,2025-10-21,True,3.63,Bonnet SA
+PROD_5041,Jeux Vidéo Face 633,Loisirs,Jeux Vidéo,Berger,311.5,443.94,426,15,2025-11-05,True,1.84,Ruiz Rousseau S.A.S.
+PROD_5042,Smartwatch Pointe 302,Électronique,Smartwatch,Joly,446.43,727.59,840,5,2024-08-29,True,7.91,Dupont Launay S.A.R.L.
+PROD_5043,Tablette Agir 284,Électronique,Tablette,Lemoine et Fils,424.91,571.49,803,33,2024-04-05,True,19.27,Julien SA
+PROD_5044,Meuble Parent 201,Maison,Meuble,Breton S.A.S.,166.03,262.27,808,5,2025-06-04,True,3.29,Clerc
+PROD_5045,Randonnée Éviter 169,Sport,Randonnée,Faure,180.78,264.05,977,6,2025-03-31,True,10.9,Mahe
+PROD_5046,Électroménager Solitude 562,Maison,Électroménager,Lelièvre Le Roux et Fils,146.69,201.46,835,29,2025-05-01,True,15.17,Perrot Diaz S.A.R.L.
+PROD_5047,Casque Audio Occasion 617,Électronique,Casque Audio,Bonneau,393.54,648.43,624,40,2025-06-21,True,4.62,Boulanger Brunel S.A.
+PROD_5048,Vélo Encore 549,Sport,Vélo,Fleury,177.43,242.4,702,38,2024-11-24,True,3.9,Martin
+PROD_5049,Ordinateur Surtout 649,Électronique,Ordinateur,Pires Duval S.A.,419.02,511.15,472,28,2024-07-18,True,1.62,Jacquet
+PROD_5050,Chaussures L'une 745,Mode,Chaussures,Rey,143.61,172.62,141,43,2025-03-12,True,19.49,Andre
+PROD_5051,Décoration Désir 335,Maison,Décoration,Jacques Loiseau SARL,230.83,287.9,501,17,2024-05-11,True,13.46,Paul
+PROD_5052,Casque Audio Rassurer 419,Électronique,Casque Audio,Thierry Hamel SARL,464.24,668.05,877,19,2025-02-03,True,1.08,Paul
+PROD_5053,Smartphone Sujet 931,Électronique,Smartphone,Pons S.A.R.L.,423.12,510.44,33,10,2025-08-31,True,15.67,Colas SA
+PROD_5054,Instrument Pas 850,Loisirs,Instrument,Guillon S.A.R.L.,315.96,507.94,846,19,2024-04-25,True,8.01,Charles S.A.S.
+PROD_5055,Cuisine Lieu 784,Maison,Cuisine,Allain,463.74,617.09,586,45,2025-01-22,True,18.46,Blot et Fils
+PROD_5056,Tablette Été 252,Électronique,Tablette,Normand S.A.S.,452.24,767.67,380,16,2025-01-16,True,7.53,Alves Hoarau S.A.
+PROD_5057,Livre Saint 859,Loisirs,Livre,Pereira,265.9,370.02,807,14,2025-09-08,True,5.79,Fernandes S.A.R.L.
+PROD_5058,Décoration Préparer 864,Maison,Décoration,Gimenez,403.09,611.77,405,31,2024-05-10,True,3.14,Schneider Pelletier SA
+PROD_5059,Décoration Courage 174,Maison,Décoration,Guillet Lambert SARL,329.88,441.8,185,11,2025-02-03,True,3.64,Clément SA
+PROD_5060,Meuble Police 689,Maison,Meuble,Bonnin S.A.R.L.,34.45,52.83,93,12,2024-03-09,True,7.02,Clément
+PROD_5061,Vélo Pas 583,Sport,Vélo,Richard,73.88,104.17,229,23,2023-12-29,True,8.96,Dupré
+PROD_5062,Yoga Histoire 793,Sport,Yoga,Lebrun,286.95,449.61,727,8,2024-07-14,True,5.78,Perrot
+PROD_5063,Smartphone Dernier 966,Électronique,Smartphone,Blin,489.76,762.7,904,25,2024-08-30,True,1.3,Pottier
+PROD_5064,Luminaire Habiter 246,Maison,Luminaire,Durand,478.97,833.05,365,18,2025-05-26,True,13.9,Gallet
+PROD_5065,Livre Angoisse 798,Loisirs,Livre,Rivière,169.62,301.18,66,14,2024-04-20,True,4.11,Potier
+PROD_5066,Vêtement Homme Si 141,Mode,Vêtement Homme,Mahe,290.7,377.87,422,22,2024-10-07,True,0.53,Pelletier Guillot S.A.
+PROD_5067,Sacs Rencontre 604,Mode,Sacs,Legendre,278.5,362.53,704,44,2025-08-01,True,5.95,Marie Giraud et Fils
+PROD_5068,Jeux Vidéo Mort 623,Loisirs,Jeux Vidéo,Turpin,450.15,710.31,464,20,2024-10-13,True,1.19,Philippe et Fils
+PROD_5069,Vêtement Femme Naturellement 476,Mode,Vêtement Femme,Reynaud S.A.,310.72,385.82,437,38,2024-05-18,True,6.93,Dupuis Delahaye S.A.R.L.
+PROD_5070,Fitness Membre 229,Sport,Fitness,Normand S.A.S.,339.48,506.94,999,6,2025-04-28,True,3.71,Hervé Jacquot et Fils
+PROD_5071,Running Rare 458,Sport,Running,Guilbert Becker S.A.,178.2,287.31,456,17,2024-01-13,True,11.1,Martinez
+PROD_5072,Randonnée Cruel 811,Sport,Randonnée,Olivier,406.78,587.62,254,49,2024-04-17,True,17.14,Petitjean
+PROD_5073,Smartphone Chose 151,Électronique,Smartphone,François,45.81,71.17,605,14,2025-04-02,True,12.99,Ferrand
+PROD_5074,Vélo Vaste 881,Sport,Vélo,Morin S.A.,283.65,474.28,117,28,2025-08-04,True,17.89,Coste S.A.S.
+PROD_5075,Casque Audio Passé 388,Électronique,Casque Audio,Blot Martins SARL,237.94,297.88,7,14,2023-11-29,True,9.33,Chrétien Roux S.A.
+PROD_5076,Chaussures Dessus 284,Mode,Chaussures,Masse,13.18,23.64,322,22,2025-07-30,False,15.82,Wagner
+PROD_5077,Jardinage Selon 620,Loisirs,Jardinage,David SARL,202.2,275.23,123,26,2024-01-19,True,18.61,Charpentier SARL
+PROD_5078,Casque Audio Cent 896,Électronique,Casque Audio,Grégoire Adam SARL,55.69,75.63,981,40,2023-12-25,True,18.41,Merle
+PROD_5079,Sacs Marchand 588,Mode,Sacs,Da Silva,302.58,451.86,86,39,2024-12-15,True,18.9,Bailly
+PROD_5080,Vêtement Femme Oser 181,Mode,Vêtement Femme,Evrard,250.66,346.94,402,19,2024-08-10,True,7.04,Techer S.A.S.
+PROD_5081,Fitness Espoir 708,Sport,Fitness,Delorme,460.17,799.8,182,11,2025-04-07,False,10.59,Grondin
+PROD_5082,Sacs Campagne 373,Mode,Sacs,Blin,101.4,178.19,219,14,2024-10-28,True,6.5,Rodrigues S.A.
+PROD_5083,Cuisine Fois 523,Maison,Cuisine,Le Roux S.A.S.,369.86,459.92,487,41,2024-06-07,True,13.23,Ribeiro
+PROD_5084,Casque Audio Rare 666,Électronique,Casque Audio,Leduc S.A.,237.03,378.32,333,31,2025-07-27,True,18.23,Verdier S.A.R.L.
+PROD_5085,Smartwatch Digne 367,Électronique,Smartwatch,Lefèvre,320.6,550.2,726,40,2024-08-23,True,9.17,Hubert Lelièvre S.A.R.L.
+PROD_5086,Vélo Celui 816,Sport,Vélo,Poirier,16.24,25.42,385,39,2025-01-24,True,0.17,Garnier
+PROD_5087,Ordinateur Nul 192,Électronique,Ordinateur,Lebreton Muller et Fils,218.45,278.79,856,5,2025-05-25,True,13.17,Chauvet
+PROD_5088,Chaussures Loi 586,Mode,Chaussures,Bouchet Pelletier S.A.,483.64,752.78,140,12,2025-08-25,True,13.75,Riou
+PROD_5089,Tablette Crainte 435,Électronique,Tablette,Arnaud,280.79,431.9,56,42,2023-11-29,True,17.45,Marchal
+PROD_5090,Casque Audio Vendre 223,Électronique,Casque Audio,Ferreira SARL,277.69,450.3,713,14,2025-01-15,True,8.62,Vallée Rodriguez et Fils
+PROD_5091,Running Peser 998,Sport,Running,Traore,404.7,663.16,932,24,2023-12-28,True,6.8,Masse David S.A.
+PROD_5092,Luminaire Autour 119,Maison,Luminaire,Tessier,254.2,361.03,963,41,2023-12-18,True,3.97,Mallet
+PROD_5093,Yoga Lieu 870,Sport,Yoga,Bernier et Fils,287.04,360.99,809,5,2024-04-20,True,9.26,Joseph
+PROD_5094,Vélo Ne 821,Sport,Vélo,Le Goff et Fils,110.21,159.74,560,43,2025-04-23,True,12.84,Blanchard Lejeune SA
+PROD_5095,Jardinage Car 301,Loisirs,Jardinage,Pierre,206.67,252.63,448,12,2024-04-16,True,4.06,Garnier
+PROD_5096,Meuble Secret 370,Maison,Meuble,Maurice,203.69,364.58,860,5,2024-03-31,True,6.09,Lefebvre Sauvage S.A.S.
+PROD_5097,Décoration Tâche 335,Maison,Décoration,Poirier Brunel et Fils,229.21,395.19,670,34,2024-07-06,True,12.48,Marchal Martin SARL
+PROD_5098,Décoration Dangereux 562,Maison,Décoration,Potier et Fils,312.01,502.65,565,21,2024-03-16,True,7.55,Petit
+PROD_5099,Meuble Faire 550,Maison,Meuble,Couturier Couturier SARL,145.99,250.91,151,20,2025-10-26,True,0.17,Julien
+PROD_5100,Instrument Crier 415,Loisirs,Instrument,Berthelot SA,88.58,121.68,183,39,2025-01-02,True,15.71,Laroche
+PROD_5101,Accessoires As 349,Mode,Accessoires,Bouchet S.A.S.,330.24,453.94,879,31,2024-10-23,True,2.52,Ribeiro
+PROD_5102,Smartwatch Poste 670,Électronique,Smartwatch,Gonzalez SARL,156.36,198.82,224,22,2024-01-14,True,8.43,Masse
+PROD_5103,Électroménager Dessus 860,Maison,Électroménager,Vaillant,236.13,416.25,947,13,2024-06-18,True,15.88,Meunier
+PROD_5104,Yoga Fonder 947,Sport,Yoga,Jacquot Martel S.A.,19.66,32.53,207,14,2023-11-24,True,8.09,Daniel Blot et Fils
+PROD_5105,Meuble Grand 315,Maison,Meuble,Leclercq S.A.,441.57,672.35,618,45,2025-05-14,True,15.13,Riou S.A.S.
+PROD_5106,Luminaire Aller 470,Maison,Luminaire,Simon et Fils,381.95,638.08,263,31,2024-03-03,True,12.05,Hervé Hervé S.A.R.L.
+PROD_5107,Bricolage Pitié 516,Loisirs,Bricolage,Pages,378.01,530.65,940,35,2023-12-13,True,14.28,Meunier Godard SA
+PROD_5108,Randonnée Relation 995,Sport,Randonnée,Clerc,81.65,138.98,226,19,2025-02-04,True,9.19,Simon
+PROD_5109,Fitness Humain 757,Sport,Fitness,De Sousa,163.41,233.76,493,45,2024-05-01,True,13.33,Bigot
+PROD_5110,Fitness Course 524,Sport,Fitness,Martins S.A.R.L.,67.35,81.47,309,21,2024-10-10,True,11.08,Collin
+PROD_5111,Fitness Mais 232,Sport,Fitness,Gay S.A.S.,331.88,546.54,639,24,2024-09-18,True,15.45,Benoit S.A.S.
+PROD_5112,Vêtement Homme Soin 343,Mode,Vêtement Homme,Riou,361.78,631.86,470,13,2023-12-05,True,4.73,Guyon SARL
+PROD_5113,Jeux Vidéo Douleur 579,Loisirs,Jeux Vidéo,Ruiz,65.24,102.86,454,29,2024-09-10,True,14.46,Costa Roy SA
+PROD_5114,Tablette Tantôt 950,Électronique,Tablette,Chevallier,173.88,244.29,80,27,2025-05-21,True,9.23,Caron Dumont SA
+PROD_5115,Running Tâche 622,Sport,Running,Vaillant Gomes S.A.R.L.,407.4,527.3,514,12,2024-04-12,True,17.62,Verdier
+PROD_5116,Meuble Enfin 261,Maison,Meuble,Leclerc Nicolas S.A.,69.89,104.58,841,45,2025-11-06,True,9.09,Denis S.A.R.L.
+PROD_5117,Accessoires Endormir 940,Mode,Accessoires,Payet SARL,480.61,627.02,917,31,2024-06-17,True,14.67,Germain
+PROD_5118,Jardinage Odeur 421,Loisirs,Jardinage,Gillet Laurent SA,450.65,737.23,446,22,2025-09-04,True,18.24,Vallée
+PROD_5119,Chaussures Accorder 550,Mode,Chaussures,Roger Brun et Fils,110.59,156.88,855,42,2025-09-26,True,2.73,Fleury
+PROD_5120,Fitness Fort 864,Sport,Fitness,Blanc Turpin S.A.,408.28,633.71,708,43,2024-03-27,True,3.47,Lemaire
+PROD_5121,Running Conduire 801,Sport,Running,Hardy,254.09,342.4,486,41,2024-05-15,True,12.68,Gomes S.A.R.L.
+PROD_5122,Smartwatch Notre 180,Électronique,Smartwatch,Torres,246.79,407.54,690,24,2025-08-21,True,9.31,Bailly
+PROD_5123,Randonnée Réduire 391,Sport,Randonnée,Carre,32.28,50.15,637,47,2025-07-26,True,3.08,Henry Hamel et Fils
+PROD_5124,Sacs Supporter 596,Mode,Sacs,Gauthier Roy S.A.,96.66,154.39,102,45,2023-12-21,False,4.69,Boutin
+PROD_5125,Décoration Loup 243,Maison,Décoration,Thomas Perrier SA,426.94,629.77,299,34,2023-12-19,True,1.78,Caron Labbé et Fils
+PROD_5126,Accessoires Franchir 754,Mode,Accessoires,Chauvet Breton SA,298.17,403.7,339,8,2025-11-10,True,16.02,Garcia Rodrigues SARL
+PROD_5127,Jeux Vidéo Secret 521,Loisirs,Jeux Vidéo,Bodin Torres et Fils,33.22,57.95,709,18,2025-09-06,True,10.74,Delmas Brun SA
+PROD_5128,Accessoires Haïr 696,Mode,Accessoires,Pruvost SA,454.74,591.49,281,12,2025-08-21,True,4.55,Rémy Fabre SA
+PROD_5129,Tablette Jaune 414,Électronique,Tablette,Regnier,256.39,355.99,634,33,2025-08-12,True,9.92,Couturier Renard et Fils
+PROD_5130,Chaussures Charge 632,Mode,Chaussures,Rodriguez SA,75.17,97.58,36,43,2025-03-22,True,11.89,Muller
+PROD_5131,Bricolage Est 741,Loisirs,Bricolage,Hamel Lebreton SARL,145.67,209.56,881,35,2025-07-03,True,0.92,Aubry SARL
+PROD_5132,Tablette Tâche 372,Électronique,Tablette,Reynaud Denis S.A.,169.28,226.78,675,12,2024-12-06,True,4.0,Masson S.A.S.
+PROD_5133,Livre Trois 166,Loisirs,Livre,Rémy SARL,316.63,426.88,987,37,2024-12-08,False,9.29,Aubry
+PROD_5134,Jardinage Complet 930,Loisirs,Jardinage,Perrier S.A.,176.52,273.73,667,7,2024-06-12,True,8.94,Berger Loiseau SA
+PROD_5135,Jardinage Beaucoup 520,Loisirs,Jardinage,Caron Reynaud S.A.S.,391.54,678.93,556,40,2023-12-27,True,11.05,Lefebvre et Fils
+PROD_5136,Bricolage Pencher 610,Loisirs,Bricolage,Lacroix Fouquet S.A.,151.0,270.26,290,29,2025-03-02,True,0.88,Didier
+PROD_5137,Yoga Prier 740,Sport,Yoga,Gomes,445.3,541.19,968,33,2025-09-07,True,7.48,Berger
+PROD_5138,Vélo Soir 736,Sport,Vélo,Fournier,133.59,230.65,994,20,2025-02-17,True,2.32,Launay SA
+PROD_5139,Vêtement Femme Loi 915,Mode,Vêtement Femme,Buisson S.A.S.,22.0,38.75,204,43,2024-02-25,True,2.88,Dos Santos Perrier SARL
+PROD_5140,Meuble Mener 877,Maison,Meuble,Fleury Guillot et Fils,109.99,194.41,409,44,2025-01-24,True,10.8,Evrard S.A.R.L.
+PROD_5141,Vélo Rideau 184,Sport,Vélo,Guichard Perret S.A.R.L.,282.2,472.63,297,38,2025-01-25,True,13.38,Masse
+PROD_5142,Jardinage Clair 358,Loisirs,Jardinage,Mallet,276.99,413.42,858,26,2024-03-22,True,0.2,Renaud
+PROD_5143,Jardinage Matière 386,Loisirs,Jardinage,Lévêque Louis S.A.S.,353.36,605.44,901,41,2024-02-01,True,3.63,Da Silva Daniel SA
+PROD_5144,Smartphone Espérer 997,Électronique,Smartphone,Grégoire Reynaud et Fils,436.37,757.3,176,17,2024-07-09,True,6.18,Chevallier
+PROD_5145,Bricolage Lourd 800,Loisirs,Bricolage,Georges et Fils,270.67,423.63,46,25,2025-07-20,False,11.48,Perrot SA
+PROD_5146,Vêtement Femme Enfance 505,Mode,Vêtement Femme,Blot SA,13.72,21.18,834,41,2024-01-20,True,19.31,François S.A.
+PROD_5147,Luminaire Douze 612,Maison,Luminaire,Maury,241.41,293.94,831,35,2024-06-16,True,9.51,Lambert
+PROD_5148,Décoration Connaître 306,Maison,Décoration,Pons Roche SA,196.18,240.67,45,29,2024-12-12,True,19.8,Dubois
+PROD_5149,Smartphone Roche 571,Électronique,Smartphone,Bourgeois Royer S.A.,493.78,827.19,300,17,2024-04-05,False,9.84,Boulanger S.A.S.
+PROD_5150,Vêtement Homme Nom 286,Mode,Vêtement Homme,Lesage,329.92,526.49,758,42,2024-05-30,True,5.19,Foucher S.A.S.
+PROD_5151,Accessoires Fort 544,Mode,Accessoires,Bousquet SA,377.65,577.36,207,40,2023-11-30,True,11.73,Lombard
+PROD_5152,Running Grave 720,Sport,Running,Devaux S.A.R.L.,83.51,128.37,451,18,2024-03-24,True,0.84,Jacob Lemoine SA
+PROD_5153,Électroménager Sommeil 668,Maison,Électroménager,Dufour SA,84.34,129.9,803,22,2024-08-29,True,10.56,Blanc Delahaye S.A.S.
+PROD_5154,Vêtement Homme Terreur 930,Mode,Vêtement Homme,Blot,35.08,57.36,980,29,2025-08-11,False,7.28,Marchal
+PROD_5155,Vélo Forme 184,Sport,Vélo,Lemaire Chauvin S.A.R.L.,194.28,331.06,25,46,2024-06-23,True,11.23,Morvan et Fils
+PROD_5156,Chaussures Vérité 725,Mode,Chaussures,Mercier,468.07,633.79,715,32,2024-10-13,True,1.79,Charles
+PROD_5157,Chaussures Grâce 792,Mode,Chaussures,Legendre,439.21,573.45,314,42,2024-02-20,True,18.08,Gérard S.A.
+PROD_5158,Vélo Exiger 168,Sport,Vélo,Aubert,71.26,91.67,644,37,2025-07-01,False,5.85,Moulin
+PROD_5159,Bricolage Chez 338,Loisirs,Bricolage,Aubert,246.28,400.38,977,36,2023-12-07,False,16.37,Perret Lefort S.A.R.L.
+PROD_5160,Décoration Croiser 204,Maison,Décoration,Rossi SA,441.06,788.56,364,31,2024-09-09,True,9.49,Brun
+PROD_5161,Randonnée Décider 722,Sport,Randonnée,Guyot Louis SARL,31.94,48.72,960,33,2024-02-25,True,8.64,Pires
+PROD_5162,Chaussures Époque 859,Mode,Chaussures,Nicolas Maillot S.A.S.,364.95,591.38,233,39,2023-12-20,True,19.96,Gilbert
+PROD_5163,Casque Audio Circonstance 914,Électronique,Casque Audio,Clément SA,443.11,780.86,756,21,2024-11-01,True,4.76,Courtois
+PROD_5164,Vélo Événement 608,Sport,Vélo,Hardy,342.98,460.18,767,8,2025-02-11,True,10.78,Guillou
+PROD_5165,Smartwatch Chose 334,Électronique,Smartwatch,Laine,111.52,144.46,662,28,2025-07-14,False,9.09,De Oliveira S.A.R.L.
+PROD_5166,Électroménager Personne 647,Maison,Électroménager,Charpentier,221.46,350.91,983,37,2024-05-01,True,9.09,Lebon S.A.S.
+PROD_5167,Smartwatch Échapper 760,Électronique,Smartwatch,Klein,448.11,797.07,391,36,2025-04-27,True,15.73,Gautier
+PROD_5168,Smartphone Pouvoir 553,Électronique,Smartphone,Blanchet,183.79,318.41,616,22,2024-05-14,True,11.36,Bonnet
+PROD_5169,Accessoires Passage 181,Mode,Accessoires,Rodrigues,296.41,433.88,50,9,2023-12-20,True,5.13,Giraud S.A.S.
+PROD_5170,Casque Audio Asseoir 304,Électronique,Casque Audio,Torres,304.82,477.09,142,30,2024-03-07,True,16.7,Alexandre
+PROD_5171,Sacs Admettre 909,Mode,Sacs,Lesage Lebreton SARL,494.01,723.12,967,25,2025-07-10,True,17.04,Bonneau S.A.R.L.
+PROD_5172,Sacs Retomber 443,Mode,Sacs,Carlier,498.69,682.86,982,40,2024-05-30,False,5.06,Roger Hebert S.A.S.
+PROD_5173,Fitness Partout 882,Sport,Fitness,Fontaine SARL,455.69,669.77,69,48,2025-01-20,True,13.71,Mercier
+PROD_5174,Décoration Pourquoi 868,Maison,Décoration,Jacques et Fils,455.67,730.26,575,46,2024-12-18,True,1.01,Costa
+PROD_5175,Instrument Guerre 310,Loisirs,Instrument,Pascal Guérin et Fils,317.69,570.71,114,37,2025-10-14,True,1.22,Mace Costa et Fils
+PROD_5176,Tablette Espace 615,Électronique,Tablette,Martineau S.A.S.,296.03,509.88,833,19,2024-04-18,True,11.22,Laporte Joseph et Fils
+PROD_5177,Sacs Enfin 579,Mode,Sacs,Devaux SA,139.13,186.24,493,45,2024-11-18,True,10.95,Paul
+PROD_5178,Luminaire Tout 156,Maison,Luminaire,Carlier Bonnet et Fils,29.34,45.82,175,42,2025-04-14,False,16.11,Gosselin Robin S.A.
+PROD_5179,Livre Apprendre 966,Loisirs,Livre,Blin Alves S.A.S.,169.19,255.52,341,17,2025-06-07,False,2.96,Louis
+PROD_5180,Décoration Quant à 787,Maison,Décoration,Martinez,50.96,86.3,1,26,2025-01-18,True,14.42,Guillon
+PROD_5181,Vélo Plein 790,Sport,Vélo,Payet,281.99,356.8,921,40,2025-05-28,True,14.72,Turpin
+PROD_5182,Vêtement Femme Hier 177,Mode,Vêtement Femme,Charrier Lefort S.A.R.L.,306.14,422.98,4,41,2025-03-25,True,8.86,Raymond S.A.R.L.
+PROD_5183,Vélo Crise 333,Sport,Vélo,Robin,427.94,595.04,633,32,2025-09-17,True,8.11,Sauvage
+PROD_5184,Smartwatch Robe 617,Électronique,Smartwatch,Thibault,187.12,302.36,902,29,2024-11-18,True,6.45,Hernandez
+PROD_5185,Tablette Renverser 953,Électronique,Tablette,Boutin,164.13,259.32,671,35,2025-03-30,True,3.82,Gauthier
+PROD_5186,Cuisine Encore 165,Maison,Cuisine,Bousquet S.A.S.,41.21,71.11,633,10,2025-03-19,True,11.38,Bonnet
+PROD_5187,Cuisine Verre 152,Maison,Cuisine,Nicolas SARL,143.1,235.47,377,9,2025-11-03,True,3.61,Gallet Collin SA
+PROD_5188,Jardinage Nation 429,Loisirs,Jardinage,Robert Lelièvre SA,360.53,583.17,869,6,2025-06-07,True,16.09,Potier
+PROD_5189,Vêtement Femme Île 993,Mode,Vêtement Femme,Aubry S.A.S.,399.71,649.34,453,38,2025-02-10,True,16.28,Gaillard SA
+PROD_5190,Yoga Importance 137,Sport,Yoga,Joubert et Fils,136.72,190.78,617,37,2024-01-31,False,10.1,Marchal
+PROD_5191,Chaussures Leur 153,Mode,Chaussures,Lopez,353.74,506.82,166,27,2025-03-19,True,17.66,Guyon Colin SARL
+PROD_5192,Vêtement Femme Endormir 593,Mode,Vêtement Femme,Colas,213.45,336.66,667,23,2023-12-07,True,3.95,Hebert
+PROD_5193,Bricolage Mal 661,Loisirs,Bricolage,Adam Sauvage et Fils,30.14,45.13,882,40,2024-11-06,True,3.92,Laporte
+PROD_5194,Vélo Caresser 838,Sport,Vélo,Germain,491.59,700.09,837,47,2024-05-17,True,14.17,Millet Giraud S.A.R.L.
+PROD_5195,Ordinateur Présenter 695,Électronique,Ordinateur,Pereira Riou et Fils,154.25,236.74,483,48,2024-11-13,True,12.06,Bertin
+PROD_5196,Running Penser 932,Sport,Running,Dos Santos,181.46,276.87,503,26,2024-04-08,True,12.46,Fischer S.A.
+PROD_5197,Running Violence 638,Sport,Running,Boutin Lenoir SA,265.92,376.54,563,14,2024-04-23,True,1.69,Royer
+PROD_5198,Instrument Envelopper 570,Loisirs,Instrument,Vallet Roussel et Fils,479.91,724.26,747,34,2025-10-06,True,11.71,Menard
+PROD_5199,Accessoires Animal 293,Mode,Accessoires,Lévy,137.64,235.99,990,22,2025-02-13,True,7.87,Alves S.A.S.

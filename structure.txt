@@ -1,0 +1,42 @@
+projet_analyse_ecommerce_powerbi/
+│
+├── data/
+│   ├── raw/                  # Données brutes
+│   │   ├── customers.csv
+│   │   ├── orders.csv
+│   │   ├── products.csv
+│   │   ├── geolocation.csv
+│   │   └── returns.csv
+│   ├── processed/            # Données transformées
+│   └── powerbi/              # Données optimisées pour Power BI
+│
+├── src/
+│   ├── data_loading.py
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
+│   ├── advanced_analysis.py
+│   ├── powerbi_preparation.py
+│   └── utils.py
+│
+├── powerbi/
+│   ├── dashboard.pbix
+│   ├── data_model/
+│   │   ├── star_schema_tables/
+│   │   └── data_relationships/
+│   ├── measures/
+│   │   ├── sales_measures.dax
+│   │   ├── customer_measures.dax
+│   │   └── kpi_measures.dax
+│   └── assets/
+│       ├── custom_visuals/
+│       └── themes/
+│
+├── notebooks/
+│   ├── exploration.ipynb
+│   └── analysis.ipynb
+│
+├── reports/
+│   ├── powerbi_documentation/
+│   └── user_guide/
+│
+└── requirements.txt
