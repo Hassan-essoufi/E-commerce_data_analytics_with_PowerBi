@@ -1,5 +1,5 @@
 import pandas as pd
-from datetime import date 
+from datetime import date
 
 def create_temporal_features(df_orders, date_col="date"):
     """
@@ -119,19 +119,75 @@ def create_product_features(df_products, df_orders, df_items, df_returns):
 
     return df_out
 
-
-
-
-
-
 def create_geographic_features(df_geolocation):
     """
     Crée des features géographiques
     """
-    # régions, densité, zones géographiques
+    df_out = df_geolocation.copy()
 
-def create_business_kpis():
+    # regions
+    region_map = {
+        'France': 'Western Europe',
+        'Germany': 'Western Europe',
+        'Belgium': 'Western Europe',
+        'United Kingdom': 'Western Europe',
+        'Switzerland': 'Central Europe',
+        'Italy': 'Southern Europe',
+        'Spain': 'Southern Europe',
+        'United States': 'North America',
+        'Canada': 'North America'
+    }
+    df_out['region_group'] = df_out['country'].map(region_map)
+
+    # Population class
+    df_out['population_class'] = df_out['population'].apply(
+        lambda p: 'large' if p > 1_000_000 
+        else 'medium' if p >= 100_000 
+        else 'small'
+    )
+
+    # Hemisphere (based on latitude)
+    df_out['hemisphere'] = df_out['latitude'].apply(
+        lambda lat: 'North' if lat >= 0 else 'South'
+    )
+
+    # Number of cities per country
+    country_city_count = df_out.groupby('country')['city'].nunique().reset_index()
+    country_city_count.columns = ['country', 'country_city_count']
+
+    df_final = df_out.merge(country_city_count, on='country', how='left')
+
+    return df_final
+
+def create_business_kpis(df_orders, df_visits):
     """
-    Calcule les KPI métier de base
+    Compute key business KPIs:
+    - Total Revenue (CA)
+    - Average Order Value (AOV)
+    - Conversion Rate
     """
-    # CA, panier moyen, taux conversion
+
+    # Total Revenue (CA)
+    revenue = df_orders['total_amount'].sum()
+
+    # Tatal commands
+    n_orders = df_orders['order_id'].nunique()
+
+    # Average Order Value (AOV)
+    avg_order_value = revenue / n_orders if n_orders > 0 else 0
+
+    # Website visitors
+    n_visitors = df_visits['visitors'].sum()
+
+    # Conversion rate
+    conversion_rate = (n_orders / n_visitors * 100) if n_visitors > 0 else 0
+
+    return {
+        'total_revenue': round(revenue, 2),
+        'order_count': n_orders,
+        'average_order_value': round(avg_order_value, 2),
+        'conversion_rate_%': round(conversion_rate, 2)
+    }
+
+
+# create_all_features()
