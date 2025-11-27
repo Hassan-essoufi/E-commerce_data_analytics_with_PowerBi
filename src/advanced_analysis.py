@@ -24,29 +24,68 @@ def perform_cohort_analysis(df_orders):
         (df['order_month'].dt.year - df['cohort_month'].dt.year) * 12 +
         (df['order_month'].dt.month - df['cohort_month'].dt.month)
     )
-
-    # 
     cohort_counts = df.groupby(['cohort_month', 'cohort_index'])['customer_id'].nunique().reset_index()
 
-    # 7️⃣ Pivot en matrice cohortes
+    # cohort Matrix
     cohort_matrix = cohort_counts.pivot_table(
         index='cohort_month',
         columns='cohort_index',
         values='customer_id'
     )
 
-    # 8️⃣ Calcul des taux de rétention (%)
-    retention = cohort_matrix.divide(cohort_matrix.iloc[:, 0], axis=0).round(3)
+    # Retention ratio (%)
+    retention = (cohort_matrix.divide(cohort_matrix.iloc[:, 0], axis=0)*100).round(3)
 
     return retention
     
 
-
 def customer_lifetime_value_analysis(df_customers, df_orders):
     """
-    Calcule et analyse le CLV
+    Calcule et analyse le Customer Lifetime Value (CLV)
+    - CLV historique
+    - CLV prédictif simple
+    - Segmentation des clients
     """
-    # CLV historique, prédictif, segmentation
+    df_customers = df_customers.copy()
+    df_orders = df_orders.copy()
+
+    # Historical CLV 
+    clv_hist = df_orders.groupby('customer_id')['total_amount'].sum().reset_index()
+    clv_hist.rename(columns={'total_amount': 'clv_historical'}, inplace=False)
+
+    # Commands frequency
+    freq = df_orders.groupby('customer_id')['order_id'].nunique().reset_index()
+    freq.rename(columns={'order_id': 'purchase_frequency'}, inplace=True)
+
+    # Average Order Value
+    avg_order_value = (df_orders.groupby('customer_id')['total'].sum() /
+                       df_orders.groupby('customer_id')['order_id'].nunique()).reset_index()
+    avg_order_value.rename(columns={0: 'avg_order_value'}, inplace=True)
+
+    df_clv = df_customers.merge(clv_hist, on='customer_id', how='left')
+    df_clv = df_clv.merge(freq, on='customer_id', how='left')
+    df_clv = df_clv.merge(avg_order_value, on='customer_id', how='left')
+
+    # Basic CLV predective
+    estimated_lifespan_years = 3
+    df_clv['clv_predicted'] = (
+        df_clv['avg_order_value'] *
+        df_clv['purchase_frequency'] *
+        estimated_lifespan_years
+    )
+
+    # Client segmentation
+    df_clv['segment'] = pd.qcut(
+        df_clv['clv_predicted'],
+        q=4,
+        labels=['Low Value', 'Mid-Low', 'Mid-High', 'High Value']
+    )
+
+    return df_clv
+
+
+
+
 
 def market_basket_analysis(df_orders):
     """
