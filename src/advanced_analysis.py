@@ -1,3 +1,6 @@
+from lifetimes import BetaGeoFitter, GammaGammaFitter
+from mlxtend.frequent_patterns import apriori, association_rules
+
 import pandas as pd 
 
 
@@ -37,14 +40,11 @@ def perform_cohort_analysis(df_orders):
     retention = (cohort_matrix.divide(cohort_matrix.iloc[:, 0], axis=0)*100).round(3)
 
     return retention
-    
 
 def customer_lifetime_value_analysis(df_customers, df_orders):
     """
-    Calcule et analyse le Customer Lifetime Value (CLV)
-    - CLV historique
-    - CLV prédictif simple
-    - Segmentation des clients
+    Calculate & analyse Customer Lifetime Value (CLV)
+
     """
     df_customers = df_customers.copy()
     df_orders = df_orders.copy()
@@ -58,7 +58,7 @@ def customer_lifetime_value_analysis(df_customers, df_orders):
     freq.rename(columns={'order_id': 'purchase_frequency'}, inplace=True)
 
     # Average Order Value
-    avg_order_value = (df_orders.groupby('customer_id')['total'].sum() /
+    avg_order_value = (df_orders.groupby('customer_id')['total_amount'].sum() /
                        df_orders.groupby('customer_id')['order_id'].nunique()).reset_index()
     avg_order_value.rename(columns={0: 'avg_order_value'}, inplace=True)
 
@@ -83,15 +83,27 @@ def customer_lifetime_value_analysis(df_customers, df_orders):
 
     return df_clv
 
-
-
-
-
 def market_basket_analysis(df_orders):
     """
-    Analyse du panier d'achat
+    Analyse du panier d'achat :
+    - Trouve les produits fréquemment achetés ensemble
+    - Génère des règles d'association
     """
-    # règles association, produits fréquents
+    # Préparation du panier
+    basket = df_orders.groupby(['order_id', 'product_id'])['product_id'] \
+        .count().unstack().fillna(0)
+    
+    # One-hot encoding booléen
+    basket = basket.applymap(lambda x: x > 0)
+
+    # Itemsets fréquents
+    frequent_itemsets = apriori(basket, min_support=0.01, use_colnames=True)
+
+    # Règles d'association
+    rules = association_rules(frequent_itemsets, metric="lift", min_threshold=1.0)
+    rules = rules.sort_values('lift', ascending=False).reset_index(drop=True)
+
+    return frequent_itemsets, rules
 
 def time_series_decomposition(df_orders):
     """

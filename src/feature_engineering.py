@@ -103,8 +103,6 @@ def create_product_features(df_products, df_orders, df_items, df_returns):
         'quantity': 'sum',
     }).reset_index()
     quantity_return.columns = ['product_id', 'ret_commands']
-
-    # Merge metrics + returns
     df_out= pd.merge(df_metrics, quantity_return, on='product_id', how='left')
 
     # Return ratio %
