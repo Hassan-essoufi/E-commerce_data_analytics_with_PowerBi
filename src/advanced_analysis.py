@@ -1,6 +1,10 @@
-from lifetimes import BetaGeoFitter, GammaGammaFitter
 from mlxtend.frequent_patterns import apriori, association_rules
-
+from statsmodels.tsa.seasonal import seasonal_decompose
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report,accuracy_score
+from sklearn.cluster import KMeans
 import pandas as pd 
 
 
@@ -107,18 +111,86 @@ def market_basket_analysis(df_orders):
 
 def time_series_decomposition(df_orders):
     """
-    Décompose les séries temporelles
+    Décompose la série temporelle des ventes :
+    - tendance
+    - saisonnalité
+    - résidus
     """
-    # tendance, saisonnalité, résidus
+    
+    df = df_orders.copy()
+    df['order_date'] = pd.to_datetime(df['order_date'])
+
+    # Create daily time series
+    ts = df.groupby('order_date')['total_amount'].sum()
+
+    # Decomposition (additive)
+    decomposition = seasonal_decompose(ts, model='additive', period=30)
+
+    return {
+        'observed': decomposition.observed,
+        'trend': decomposition.trend,
+        'seasonal': decomposition.seasonal,
+        'residual': decomposition.resid
+    }
 
 def customer_segmentation_clustering(df_customers):
     """
-    Segmentation clients par clustering
+    Segmentation clients par clustering (RFM + KMeans)
     """
-    # K-means, RFM clustering, profils
+    df = df_customers.copy()
 
-def predictive_analysis_churn():
+    # RFM Features 
+    rfm = df.groupby('customer_id').agg({
+        'recency': 'mean',          
+        'frequency': 'sum',
+        'monetary': 'sum'
+    }).reset_index()
+
+    # Normalisation
+    scaler = StandardScaler()
+    rfm_scaled = scaler.fit_transform(rfm[['recency', 'frequency', 'monetary']])
+
+    # K-Means (4 clusters)
+    kmeans = KMeans(n_clusters=4, random_state=42)
+    rfm['cluster'] = kmeans.fit_predict(rfm_scaled)
+
+    # cluster profiles
+    cluster_profiles = rfm.groupby('cluster').mean()
+
+    return rfm, cluster_profiles
+
+def predictive_analysis_churn(df, target_column='churn'):
     """
-    Analyse prédictive du churn (basique)
+    Basic churn predictive analysis
     """
-    # probabilité attrition, clients à risque
+    
+    # Separate target and features
+    y = df[target_column]
+    X = df.drop(columns=[target_column])
+
+    # Encode categorical features
+    X = pd.get_dummies(X, drop_first=True)
+
+    # Split into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
+
+    # Normalize numeric features
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+
+    # Train a logistic regression model
+    model = LogisticRegression(max_iter=1000)
+    model.fit(X_train, y_train)
+
+    # Predict on test set
+    y_pred = model.predict(X_test)
+
+    # Print performance metrics
+    print("Accuracy:", accuracy_score(y_test, y_pred))
+    print(classification_report(y_test, y_pred))
+
+    return model
+

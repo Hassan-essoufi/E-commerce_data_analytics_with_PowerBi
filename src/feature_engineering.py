@@ -72,7 +72,7 @@ def create_customer_features(df_customers, df_orders):
 
     return df_out
 
-def create_product_features(df_products, df_orders, df_items, df_returns):
+def create_product_features(df_products, df_items, df_returns):
     """
     Create product-level features:
     - number of commands
